@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eleva Aromas | Marketing olfativo e higienización ambiental</title>
+  <meta name="description" content="Transforma la experiencia de tus clientes con marketing olfativo, ambientación profesional e higienización ambiental." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="js/data.js"></script>
+  <script defer src="js/app.js"></script>
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Eleva Aromas inicio">
+      <span class="brand-mark">EA</span><span>Eleva Aromas</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">☰</button>
+    <nav id="main-nav" class="main-nav">
+      <a href="index.html" class="active">Inicio</a>
+      <a href="marketing-olfativo.html">Marketing olfativo</a>
+      <a href="higienizacion.html">Higienización ambiental</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero hero-home">
+      <div class="hero-content reveal">
+        <p class="eyebrow">Marketing olfativo · Ambientación profesional · Higiene</p>
+        <h1>Haz que tu marca también se recuerde por su aroma.</h1>
+        <p class="lead">Diseñamos experiencias olfativas para negocios que quieren transformar la percepción del cliente, mejorar el ambiente y reforzar su identidad.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#recomendador">Buscar fragancia ideal</a>
+          <a class="btn ghost" href="marketing-olfativo.html">Ver cómo funciona</a>
+        </div>
+      </div>
+      <div class="hero-card reveal delay-1">
+        <span>Tu negocio</span>
+        <strong>+ Aroma adecuado</strong>
+        <p>= recuerdo, bienestar y diferenciación</p>
+      </div>
+    </section>
+
+    <section class="section intro-grid">
+      <article class="feature-card reveal">
+        <h2>Marketing olfativo</h2>
+        <p>Un odotipo ayuda a transmitir los valores de una marca con un lenguaje invisible, emocional y memorable.</p>
+      </article>
+      <article class="feature-card reveal delay-1">
+        <h2>Ambientación profesional</h2>
+        <p>Fragancias frescas, florales, amaderadas, gourmandes u orientales adaptadas al tipo de espacio y público.</p>
+      </article>
+      <article class="feature-card reveal delay-2">
+        <h2>Higienización ambiental</h2>
+        <p>Soluciones pensadas para mejorar la limpieza percibida, neutralizar malos olores y generar confianza.</p>
+      </article>
+    </section>
+
+    <section id="recomendador" class="section recommender-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Recomendador inteligente</p>
+        <h2>Encuentra aromas recomendados para tu negocio</h2>
+        <p>Escribe tu tipo de negocio y el sistema sugerirá opciones registradas en el catálogo de negocios.</p>
+      </div>
+      <div class="recommender reveal delay-1" data-mode="experience">
+        <form class="business-form" autocomplete="off">
+          <label for="business-input">Tipo de negocio</label>
+          <div class="autocomplete-wrap">
+            <input id="business-input" class="business-input" type="text" placeholder="Ej.: cafetería, clínica, hotel, ropa de mujer..." aria-describedby="business-help" />
+            <div class="suggestions" role="listbox"></div>
+          </div>
+          <small id="business-help">Puedes elegir una sugerencia o pulsar “Ver recomendaciones”.</small>
+          <button class="btn primary" type="submit">Ver recomendaciones</button>
+        </form>
+        <div class="results-panel" aria-live="polite">
+          <p class="empty-state">Selecciona un negocio para ver tres fragancias recomendadas.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span class="year"></span> Eleva Aromas. Marketing olfativo e higienización ambiental.</p>
+  </footer>
+</body>
+</html>
